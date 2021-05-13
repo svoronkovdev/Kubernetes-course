@@ -69,6 +69,8 @@ Need to install google cloud sdk
 
 `kubectl run hello --generator=run-pod/v1 --image=nginx:latest --port=80` -create pod from dockerImage nginx and open port 80
 
+` --generator=run-pod/v1 ` -for google in minicube not needed
+
 `kubectl port-forward hello 7777:80` - Our port 7777 now is port 80 our pod
 
 `kubectl describe pods hello` -show all inf about pod hello
