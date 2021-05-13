@@ -63,3 +63,24 @@ Need to install google cloud sdk
 
 `gcloud container clusters delete name`              -delete our cluster
 
+## Pods
+
+`kubectl get pods`    -show all pods
+
+`kubectl run hello --generator=run-pod/v1 --image=nginx:latest --port=80` -create pod from dockerImage nginx and open port 80
+
+`kubectl port-forward hello 7777:80` - Our port 7777 now is port 80 our pod
+
+`kubectl describe pods hello` -show all inf about pod hello
+
+`kubectl delete pods hello`  -delete pod hello
+
+`kubectl logs hello` -show log from pod hello
+
+`kubectl exec my-web date` -run command date on pod my-web
+
+`kubectl exec -it my-web bash` -run command bash interactively on pod my web
+
+`kubectl apply -f myfile.yaml` -create objects in k8s from file myfile.yaml
+
+`kubectl delete -f myfile.yaml` -delete objects from k8s from file myfile.yaml
