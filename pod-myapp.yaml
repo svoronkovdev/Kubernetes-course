@@ -11,7 +11,7 @@ metadata:
     env  : prod
     app  : main
     tier : frontend
-    owner: DenisAstahov
+    owner: SerhiiVoronkov
 spec:
   containers:
     - name : container-web
