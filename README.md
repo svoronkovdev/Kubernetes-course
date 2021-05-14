@@ -12,6 +12,7 @@
 
 `minicube ssh`      -create login with our cluster
 
+`minikube start --nodes 2 -p multinode-demo`  - 2 nodes
 
 `minicube start --cpus=4 --memory=8gb --disk-size=5gb`       -start with defined parameters
 
