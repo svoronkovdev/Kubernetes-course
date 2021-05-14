@@ -86,3 +86,34 @@ Need to install google cloud sdk
 `kubectl apply -f myfile.yaml` -create objects in k8s from file myfile.yaml
 
 `kubectl delete -f myfile.yaml` -delete objects from k8s from file myfile.yaml
+
+
+## Deployments
+
+`kubectl get deployments`    -show all deployments
+
+`kubectl get rs`    -show all replicaSets
+
+`kubectl create deployment name-deployment --image httpd:latest`    -create deployment from dockerImage httpd:latest
+
+`kubectl describe deployments name-deployment`    -show all info about deployment name-deployment
+
+`kubectl scale deployment name-deployment --replicas 4`    -create replicaSets
+
+`kubectl autoscale deployment name --min=10 --max=15 --cpu-percent=80`    -create autoScaling for deployment name
+
+`kubectl get hpa`    -show all HPA- Horizontal Auto Scallers
+
+`kubectl set image deployment/name-deployment k8sphp=adv4000/k8sphp:version2 --record`    -set deployment name Image to new
+
+`kubectl rollout status deployment/name-deployment`    -show status updating
+
+`kubectl rollout history deployment/name-deployment`    -show history updating
+
+`kubectl rollout undo deployment/name-deployment`    -rollback to previous version
+
+`kubectl rollout undo deployment/name-deployment --to-revision=2`    -rollback to version 2
+
+`kubectl rollout restart deployment/name-deployment`    -redeploy current version
+
+`kubectl delete deployments name-deployment`    -delete deployment name-deployment
