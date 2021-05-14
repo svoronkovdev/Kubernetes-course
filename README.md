@@ -119,10 +119,12 @@ Need to install google cloud sdk
 
 `kubectl delete deployments name-deployment`    -delete deployment name-deployment
 
-`kubectl apply -f deployment-3-autoscaling.yaml`
+`kubectl apply -f deployment-3-autoscaling.yaml` - createdeployment from file
 
-`kubectl port-forward my-web-deployment-autoscaling-8fd84cf84-9gjrn 7777:80`
+`kubectl port-forward my-web-deployment-autoscaling-8fd84cf84-9gjrn 7777:80` - Our port 7777 now is port 80 our pod
 
-`kubectl delete deployments my-web-deployment-autoscaling`
+`kubectl delete deployments my-web-deployment-autoscaling`- delete by name deployment(`kubectl get deployments`)
 
-`kubectl delete -f deployment-3-autoscaling.yaml`
+`kubectl delete -f deployment-3-autoscaling.yaml` -delete by file deployment
+
+`kubectl delete deployment --all` - delete all deployment
