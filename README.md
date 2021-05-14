@@ -118,3 +118,11 @@ Need to install google cloud sdk
 `kubectl rollout restart deployment/name-deployment`    -redeploy current version
 
 `kubectl delete deployments name-deployment`    -delete deployment name-deployment
+
+`kubectl apply -f deployment-3-autoscaling.yaml`
+
+`kubectl port-forward my-web-deployment-autoscaling-8fd84cf84-9gjrn 7777:80`
+
+`kubectl delete deployments my-web-deployment-autoscaling`
+
+`kubectl delete -f deployment-3-autoscaling.yaml`
