@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
         - name : kgb-web
-          image: adv4000/k8sphp:latest
+          image: vsvdevua/spring-docker.jar:latest
           ports:
             - containerPort: 80
