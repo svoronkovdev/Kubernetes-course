@@ -152,3 +152,6 @@ Need to install google cloud sdk
 
 `kubectl delete services my-webserver`    -delete service my-webserver
 
+`kubectl apply -f service-1-loadbalancer-single.yaml` -create service from yaml
+
+`kubectl delete -f service-1-loadbalancer-single.yaml` -create service from yaml
