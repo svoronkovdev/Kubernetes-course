@@ -128,3 +128,25 @@ Need to install google cloud sdk
 `kubectl delete -f deployment-3-autoscaling.yaml` -delete by file deployment
 
 `kubectl delete deployment --all` - delete all deployment
+
+
+## Services
+
+`kubectl create deployment name-deployment --image httpd:latest`    -create deployment from dockerImage httpd:latest
+
+`kubectl describe deployments name-deployment`    -show all info about deployment name-deployment
+
+`kubectl expose deployment name-deployment --type=ClusterIP --port80`    -create Service type ClusterIP for Deployment
+
+`kubectl expose deployment name-deployment --type=NodePort --port80`    -create Service type NodePort for Deployment
+
+`kubectl expose deployment name-deployment --type=LoadBalancer --port80`    -create Service type LoadBalancer for Deployment
+
+`kubectl get services`    -show all services 
+
+`kubectl get svc`    -show all services
+
+`kubectl describe nodes | grep ExternalIP`    -show External IP from all worker nodes
+
+`kubectl delete services my-webserver`    -delete service my-webserver
+
