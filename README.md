@@ -148,7 +148,7 @@ Need to install google cloud sdk
 
 `kubectl describe nodes | grep ExternalIP`    -show External IP from all worker nodes
 
-`kubectl describe nodes | grep InternalIP`    -show External IP from all worker nodes port where our service also need specify port from get svc
+`kubectl describe nodes | grep InternalIP`    -show Internal IP from all worker nodes port where our service also need specify port from get svc(for minicube)
 
 `kubectl delete services my-webserver`    -delete service my-webserver
 
