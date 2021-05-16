@@ -1,22 +1,22 @@
 # Kubernetes-course
 
-## Minicube
+## Minikube
 
-`minicube version`   -show version of minicube
+`minikube version`   -show version of minicube
 
-`minicube start`     -create and run k8s with default parameters
+`minikube start`     -create and run k8s with default parameters
 
-`minicube stop`      -stop minicube
+`minikube stop`      -stop minicube
 
-`minicube delete`    -delete minicube with cluster
+`minikube delete`    -delete minicube with cluster
 
-`minicube ssh`      -create login with our cluster
+`minikube ssh`      -create login with our cluster
 
 `minikube start --nodes 2 -p multinode-demo`  - 2 nodes
 
-`minicube start --cpus=4 --memory=8gb --disk-size=5gb`       -start with defined parameters
+`minikube start --cpus=4 --memory=8gb --disk-size=5gb`       -start with defined parameters
 
-`minicube start --cpus=2 --memory=6000mb --disk-size=4000mb` -start with defined parameters
+`minikube start --cpus=2 --memory=6000mb --disk-size=4000mb` -start with defined parameters
 
 ## Kubectl
 
@@ -154,4 +154,4 @@ Need to install google cloud sdk
 
 `kubectl apply -f service-1-loadbalancer-single.yaml` -create service from yaml
 
-`kubectl delete -f service-1-loadbalancer-single.yaml` -create service from yaml
+`kubectl delete -f service-1-loadbalancer-single.yaml` -delete service from yaml
