@@ -14,6 +14,8 @@
 
 `minikube start --nodes 2 -p multinode-demo`  - 2 nodes
 
+`minikube start --nodes 3 --cpus=4 --memory=8gb --disk-size=5gb` -start 3 node with cpus and memory and disk parameters
+
 `minikube start --cpus=4 --memory=8gb --disk-size=5gb`       -start with defined parameters
 
 `minikube start --cpus=2 --memory=6000mb --disk-size=4000mb` -start with defined parameters
@@ -155,3 +157,42 @@ Need to install google cloud sdk
 `kubectl apply -f service-1-loadbalancer-single.yaml` -create service from yaml
 
 `kubectl delete -f service-1-loadbalancer-single.yaml` -delete service from yaml
+
+
+## INGRESS Controllers 
+
+`kubectl apply -f https://projectcontour.io/quickstart/contour.yaml`    -create Ingress controller contour
+
+`kubectl get services -n projectcontour envoy -o wide`    -show ingress controller load balancer data
+
+`kubectl create deployment main --image httpd:latest`    -create deployment
+
+`kubectl create deployment web1 --image=adv4000/k8sphp:version1`    -create deployment from Image
+
+`kubectl create deployment web2 --image=adv4000/k8sphp:version2`    -create deployment from Image
+
+`kubectl scale deployment main --replicas 2`    -create replicaSets
+
+`kubectl scale deployment web1 --replicas 2`    -create replicaSets
+
+`kubectl scale deployment web2 --replicas 2`    -create replicaSets
+
+`kubectl expose deployment main --port 80 #--type=ClusterIP DEFAULT`    -create service type by default ClusterIP
+
+`kubectl expose deployment web1 --port 80 `    -create service
+
+`kubectl expose deployment web2 --port 80`    -create service
+
+`kubectl expose deployment tomcat --port 8080`    -create service
+
+`kubectl get services -o wide`    -show info all services
+
+`kubectl apply -f ingress-hosts.yaml`    -create ingress rules from file
+
+`kubectl apply -f ingress-paths.yaml`    -create ingress rules from file
+
+`kubectl get ingress`    -show all created ingress rules
+
+`kubectl describe ingress`    -show all ingress rules fully
+
+`kubectl delete ns projectcontour`    -delete ingress controller contour
