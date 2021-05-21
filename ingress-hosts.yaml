@@ -10,28 +10,28 @@ metadata:
 
 spec:
   rules:
-  - host: www.adv-it.net
+  - host: www.svoronkov
     http:
       paths:
         - backend:
            serviceName: main
            servicePort: 80
 
-  - host: web1.adv-it.net
+  - host: web1.svoronkov
     http:
       paths:
         - backend:
            serviceName: web1
            servicePort: 80
 
-  - host: web2.adv-it.net
+  - host: web2.svoronkov
     http:
       paths:
         - backend:
            serviceName: web2
            servicePort: 80
 
-  - host: cat.adv-it.net
+  - host: cat.svoronkov
     http:
       paths:
         - backend:
