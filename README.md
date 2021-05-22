@@ -196,3 +196,40 @@ Need to install google cloud sdk
 `kubectl describe ingress`    -show all ingress rules fully
 
 `kubectl delete ns projectcontour`    -delete ingress controller contour
+
+
+## HELM 
+
+`helm install app Chart-Sv/`    -deploy helm
+
+`helm list`    -show all helms
+
+`helm install app1 Chart-Sv/ --set containet.image=adv4000/k8sphp:version1 --set replicaCount=3`    -deploy and set image and replicas
+
+`helm upgrade app1 Chart-Sv/ --set containet.image=adv4000/k8sphp:version1 --set replicaCount=2`    -upgrade deploy set replicas
+
+`helm install app2 Chart-Sv/ -f prod_values.yaml`    -deploy with prod values
+
+`kubectl get svc`    -show services
+
+`helm package Chart-Sv/`    -create .tgz file(in name will be version from Chart.yaml file)
+
+`helm install app4 App-HelmChart-0.1.0.tgz`    -install from file with default values
+
+`helm search repo`    -search repository locally
+
+`helm search hub apache`    -search on artifacthub repo with apache tag
+
+ `helm repo add bitnami https://charts.bitnami.com/bitnami` -add repository
+ 
+ `helm search repo bitnami`                                 -find repositiry
+ 
+ `helm install my-release bitnami/<chart>`
+ 
+ `helm install website bitnami/apache` -install from repo
+ 
+ `helm install website bitnami/apache -f apache_webpage.yaml`  -install apache and put into webpage from github according file apache_web..
+ 
+ `helm delete name1 - delete deployment
+
+
