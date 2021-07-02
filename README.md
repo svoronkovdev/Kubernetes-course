@@ -21,7 +21,7 @@
  [Helm](#helm)
  
 
-## Minikube [Content](#content)
+### Minikube [Content](#content)
 
 `minikube version`   -show version of minicube
 
@@ -41,7 +41,7 @@
 
 `minikube start --cpus=2 --memory=6000mb --disk-size=4000mb` -start with defined parameters
 
-## Kubectl  [Content](#content)
+### Kubectl  [Content](#content)
 
 `kubectl version`              -show version of kubectl client and server
 
@@ -53,7 +53,7 @@
 
 `kubectl get nodes`             -show  all servers k8s cluster
 
-## AWS [Content](#content)
+### AWS [Content](#content)
 
 Install awscli, kubectl, eksctl
 
