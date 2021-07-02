@@ -1,6 +1,27 @@
 # Kubernetes-course
 
-## Minikube
+## Content
+
+ [Minicube](#minicube)
+ 
+ [Kubectl](#kubectl)
+ 
+ [AWS](#aws)
+ 
+ [GCP(Google cloud)](#gcp)
+ 
+ [Pods](#pods)
+ 
+ [Deployments](#deployments)
+ 
+ [Services](#services)
+ 
+ [INGRESS Controllers](#ingress-controllers)
+ 
+ [Helm](#helm)
+ 
+
+## Minikube [Content](#content)
 
 `minikube version`   -show version of minicube
 
@@ -20,7 +41,7 @@
 
 `minikube start --cpus=2 --memory=6000mb --disk-size=4000mb` -start with defined parameters
 
-## Kubectl
+## Kubectl  [Content](#content)
 
 `kubectl version`              -show version of kubectl client and server
 
@@ -32,7 +53,7 @@
 
 `kubectl get nodes`             -show  all servers k8s cluster
 
-## AWS
+## AWS [Content](#content)
 
 Install awscli, kubectl, eksctl
 
@@ -48,7 +69,7 @@ Kubernetes - eksctl configuration(https://eksctl.io) Place config(~/.kube/config
 
 `eksctl delete cluster`                      -delete cluster
 
-## GCP(Google cloud)
+## GCP(Google cloud) [Content](#content)
 
 Need to install google cloud sdk
 
@@ -66,7 +87,7 @@ Need to install google cloud sdk
 
 `gcloud container clusters delete name`              -delete our cluster
 
-## Pods
+## Pods [Content](#content)
 
 `kubectl get pods`    -show all pods
 
@@ -91,7 +112,7 @@ Need to install google cloud sdk
 `kubectl delete -f myfile.yaml` -delete objects from k8s from file myfile.yaml
 
 
-## Deployments
+## Deployments [Content](#content)
 
 `kubectl get deployments`    -show all deployments
 
@@ -132,7 +153,7 @@ Need to install google cloud sdk
 `kubectl delete deployment --all` - delete all deployment
 
 
-## Services
+## Services [Content](#content)
 
 `kubectl create deployment name-deployment --image httpd:latest`    -create deployment from dockerImage httpd:latest
 
@@ -159,7 +180,7 @@ Need to install google cloud sdk
 `kubectl delete -f service-1-loadbalancer-single.yaml` -delete service from yaml
 
 
-## INGRESS Controllers 
+## INGRESS Controllers [Content](#content)
 
 `kubectl apply -f https://projectcontour.io/quickstart/contour.yaml`    -create Ingress controller contour
 
@@ -198,7 +219,7 @@ Need to install google cloud sdk
 `kubectl delete ns projectcontour`    -delete ingress controller contour
 
 
-## HELM 
+## HELM [Content](#content)
 
 `helm install app Chart-Sv/`    -deploy helm
 
