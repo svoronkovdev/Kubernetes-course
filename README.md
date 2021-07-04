@@ -170,6 +170,11 @@ Need to install google cloud sdk
 
 `kubectl delete deployment --all` - delete all deployment
 
+[simple deployment](deployment-1-simple.yaml)
+
+[with replicas](deployment-2-replicas.yaml)
+
+[autoscaling](deployment-3-autoscaling.yaml)
 
 ## Services 
 
@@ -199,6 +204,11 @@ Need to install google cloud sdk
 
 `kubectl delete -f service-1-loadbalancer-single.yaml` -delete service from yaml
 
+[loadbalancer with one container](service-1-loadbalancer-single.yaml)
+
+[loadbalancer with two containers](service-2-loadbalancer-multi.yaml)
+
+[loadbalancer with autoscaling](service-3-loadbalancer-autoscaling.yaml)
 
 ## INGRESS Controllers 
 
@@ -240,10 +250,16 @@ Need to install google cloud sdk
 
 `kubectl delete ns projectcontour`    -delete ingress controller contour
 
+[ingress hosts](ingress-hosts.yaml)
+
+[ingress paths](ingress-paths.yaml)
+
 
 ## HELM 
 
 [Content](#content)
+
+[folder helm](HELM)
 
 `helm install app Chart-Sv/`    -deploy helm
 
