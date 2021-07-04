@@ -121,7 +121,7 @@ Need to install google cloud sdk
 
 `kubectl delete -f myfile.yaml` -delete objects from k8s from file myfile.yaml
 
-[pod-hello](pod-hello.yml)
+[pod-hello](pod-hello.yaml)
 
 
 ## Deployments
