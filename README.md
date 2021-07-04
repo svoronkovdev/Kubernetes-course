@@ -123,6 +123,10 @@ Need to install google cloud sdk
 
 [pod-hello](pod-hello.yaml)
 
+[pod-myapp](pod-myapp.yaml)
+
+[pod-myweb](pod-myweb.yaml)
+
 
 ## Deployments
 
