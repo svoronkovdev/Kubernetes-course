@@ -1,5 +1,7 @@
 # Kubernetes-course
 
+![logo](1.png)
+
 ## Content
 
  [Minicube](#minicube)
